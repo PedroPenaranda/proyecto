@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+}
+
+.navBar{
+    background-color: #5a3ae9;
+}
+.navBar .listaPrincipal{
+    width: 95%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.navBar .listaPrincipal .itemLista a{
+    text-decoration: none;
+    color: white;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.navBar .listaPrincipal .itemLista{
+    padding: 10px;
+    transition: 0.5s;
+
+}
+
+.navBar .listaPrincipal .itemLista:hover{
+    background: #5a3ae9;
+    box-shadow:  -5px 5px 10px #492fbd,
+                5px -5px 10px #6b45ff;
+    border-radius: 8px;
+
+}
