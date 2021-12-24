@@ -1,15 +1,19 @@
 *{
     margin: 0;
 }
-
+/* menu */
 .navBar{
     background-color: #5a3ae9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .navBar .listaPrincipal{
     width: 95%;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 16px;
 }
 
@@ -24,6 +28,8 @@
 .navBar .listaPrincipal .itemLista{
     padding: 10px;
     transition: 0.5s;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -34,3 +40,21 @@
     border-radius: 8px;
 
 }
+
+h3{
+    color: white;
+}
+
+/* imagen de carrito */
+.imgCarrito{
+    width: 2rem;
+}
+
+.pathCarrito{
+    fill: white;
+}
+
+.pathCarrito:hover{
+    fill: #eea70d;
+}
+
