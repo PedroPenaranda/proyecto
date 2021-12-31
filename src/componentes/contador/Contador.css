@@ -1,0 +1,49 @@
+.contenedorContador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #626ca3;
+    width: 20%;
+    height: 15rem;
+    border-radius: 25px;
+}
+
+.btnSumar, .btnRestar{
+    border-radius: 100%;
+    border: 0px;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background: #626ca3;
+    box-shadow:  20px 20px 60px #535c8b,
+             -20px -20px 60px #717cbb;
+    transition-duration: 0.5s;
+}
+
+.btnSumar{
+    color: rgb(3, 255, 3);
+}
+.btnSumar:hover{
+    box-shadow: inset 32px 32px 64px #3b4162,
+            inset -32px -32px 64px #8997e4;
+    font-size: 80px;
+}
+
+.btnRestar{
+    color: red;
+}
+.btnRestar:hover{
+    box-shadow: inset 32px 32px 64px #3b4162,
+            inset -32px -32px 64px #8997e4;
+    font-size: 80px;
+}
+
+.contadorCantidad, .contadorPrecio{
+    color: white;
+    font-size: 30px;
+}
+
