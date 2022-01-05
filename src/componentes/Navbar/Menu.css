@@ -1,5 +1,10 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ff7300;
 }
 /* menu */
 .navBar{
@@ -7,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 4rem;
 
 }
 .navBar .listaPrincipal{
