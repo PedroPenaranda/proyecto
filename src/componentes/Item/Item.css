@@ -5,9 +5,13 @@
     align-items: center;
     padding: 10px;
     border-radius: 10px;
-box-shadow:  5px 5px 0px #662e00,
+    box-shadow:  5px 5px 0px #662e00,
              -5px -5px 0px #ffb800;
     margin-bottom: 20px;
+}
+.card:hover{
+    box-shadow: 5px 5px 0px #5a3ae9,
+            -5px -5px 0px #342869;
 }
 
 .card .cardImg{
@@ -17,4 +21,25 @@ box-shadow:  5px 5px 0px #662e00,
     border-radius: 10px;
     margin-bottom: 8px;
 }
+
+.card .contCardBtn{
+    width: 100%;
+}
+
+.card .contCardBtn .btnDescripcion{
+    color: white;
+    font-size: 16px;
+    width: 90%;
+    padding: 10px;
+    background-image: linear-gradient(45deg, #5a3ae9,#39268f,#382d6b);
+    border: none;
+    border-radius: 12px 32px 12px 32px;
+    transition: 1s;
+}
+
+.card .contCardBtn .btnDescripcion:hover{
+    border-radius: 32px 12px 32px 12px;
+    background-image: linear-gradient(45deg, #382d6b,#39268f,#5a3ae9);
+}
+
 

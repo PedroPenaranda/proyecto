@@ -9,6 +9,9 @@ const Item = ({articulo}) => {
                 <h3 className='cardTxtN'>{articulo.producto}</h3>
                 <h3 className='cardTxtP'>{articulo.precio}</h3>
             </div>
+            <div className='contCardBtn'>
+                <button className='btnDescripcion'>Descripcion</button>
+            </div>
         </div>
     )
 }

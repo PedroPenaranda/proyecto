@@ -1,0 +1,12 @@
+.contPantAlter{
+    padding: 5px;
+    background-color: black;
+    border-radius: 10px;
+    width: 16rem;
+    margin-top: 5px;
+}
+
+.contPantAlter .pantDesc{
+    font-family: monospace;
+    color: white;
+}
