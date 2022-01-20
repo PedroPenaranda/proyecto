@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Contador.css'
+
 
 function Contador({min, max}) {
 

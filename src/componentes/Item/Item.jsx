@@ -1,5 +1,6 @@
 import React from 'react'
 import './Item.css'
+import Contador from '../contador/Contador'
 
 const Item = ({articulo}) => {
     return (
@@ -12,6 +13,7 @@ const Item = ({articulo}) => {
             <div className='contCardBtn'>
                 <button className='btnDescripcion'>Descripcion</button>
             </div>
+            <Contador min={1} max={22} />
         </div>
     )
 }

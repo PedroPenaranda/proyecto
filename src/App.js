@@ -1,19 +1,22 @@
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Menu from './componentes/Navbar/Menu';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
-import Contador from './componentes/contador/Contador';
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
+import Cart from './componentes/Navbar/Carrito';
 
 
 function App() {
 
   return (  
-    <center>
+    <BrowserRouter>
       <Menu />
-      <ItemListContainer />
-      <Contador min={1} max={22} />
-      <ItemDetailContainer />
-    </center>
+      <Routes>
+        <Route exact path = '/' element = { <ItemListContainer />} />
+        <Route exact path = '/Categoria/:CategoriaId' element = { <ItemListContainer />} />
+        <Route exact path = '/Descripcion/:DescripcionId' element = { <ItemDetailContainer />} />
+        <Route exact path = '/Cart' element = { <Cart />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
