@@ -1,6 +1,6 @@
 import React from 'react'
 import './Item.css'
-import Contador from '../contador/Contador'
+import { Link } from 'react-router-dom'
 
 const Item = ({articulo}) => {
     return (
@@ -11,9 +11,9 @@ const Item = ({articulo}) => {
                 <h3 className='cardTxtP'>{articulo.precio}</h3>
             </div>
             <div className='contCardBtn'>
-                <button className='btnDescripcion'>Descripcion</button>
+                <Link to = {`/Descripcion/${articulo.id}`}><button className='btnDescripcion'>Descripcion</button></Link>
             </div>
-            <Contador min={1} max={22} />
+            
         </div>
     )
 }
