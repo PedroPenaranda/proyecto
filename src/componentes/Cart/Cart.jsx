@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../../Context/CartContext';
+import './Cart.css'
 
 const Cart = () => {
 
@@ -7,9 +8,10 @@ const Cart = () => {
     
 
   return ( 
-    <div>
+    <div className='contenedorCart'>
+      <div className='cardCart'>
       {carrito?.map((product) => (
-        <div>
+        <div className='cardIntCart'>
             <img src={product.imagen} alt={product.producto} />
             <div>
                 <h3>{product.producto}</h3>
@@ -22,9 +24,10 @@ const Cart = () => {
         </div>  
       ))}  
 
-        <button onClick={ vaciarCarrito }>Vaciar Carrito</button>
+        <button className='btnVaciarCart' onClick={ vaciarCarrito }>Vaciar Carrito</button>
         <h2>{cantidadTotal()}</h2>
 
+    </div>
     </div>
     )
     
